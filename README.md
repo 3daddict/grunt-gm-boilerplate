@@ -28,6 +28,14 @@ To run the Grunt Task Runner operations type `grunt` in the cli.
 
 **Image settings can be adjusted in Gruntfile.js**
 
+#### 1x and 2x Explained
+1x and 2x represent pixel density for device screen widths.
+Screen resolutions have hardware pixels and software pixels.
+Hardware pixels are no longer equal to the software or CSS pixel with newer displays.
+The relationship between hardware and CSS pixels are described by the following formula:
+`CSS Pixels = Hardware Pixels / Pixel density`
+Therefore, hardware resolution of 2880px translates to 1440px CSS pixels on the retina display.
+
 ### Naming convention
 Image names will be appended with the following attributes
 - Original filename: `example-image.jpg`
