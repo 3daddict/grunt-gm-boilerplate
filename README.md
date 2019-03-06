@@ -46,3 +46,68 @@ example-image-lg_2x.webp`
 
 ### Default Fallback Images
 To ensure proper cross-browser compatibily original source files should also be optimized and then **always** set as the default fallback image
+
+### Code Examples
+#### HTML
+`<picture class="responsive-image">
+    <source
+        media="(min-width: 900px)"
+        srcset="../dist/images/example-1-lg_1x.webp 1x, ../dist/images/example-1-lg_2x.webp 2x"
+        type="image/webp" >
+    <source
+        media="(min-width: 601px)"
+        srcset="../dist/images/example-1-md_1x.webp 1x, ../dist/images/example-1-md_2x.webp 2x"
+        type="image/webp" >
+    <source
+        srcset="../dist/images/example-1-sm_1x.webp 1x, ../dist/images/example-1-sm_2x.webp 2x"
+        type="image/webp" >
+    <img 
+        srcset="../dist/images/example-1-sm_1x.jpg 600w,
+        ../dist/images/example-1-md_1x.jpg 900w,
+        ../dist/images/example-1-lg_1x.jpg 1440w" 
+        src="../dist/images/example-1-lg_1x.jpg"
+        type="image/jpeg"
+        alt="image description">
+</picture>`
+
+#### SCSS
+`.bg-image {
+  width: 100vw;
+  height: 500px;
+  background-size: cover;
+  background-position: center;
+  // large images (lg)
+  background-image: url("../dist/images/example-1-lg_1x.jpg"); 
+  background-image: -webkit-image-set(
+    url("../dist/images/example-1-lg_1x.webp") 1x,
+    url("../dist/images/example-1-lg_2x.webp") 2x
+  );
+  background-image: image-set(
+    url("../dist/images/example-1-lg_1x.jpg") 1x,
+    url("../dist/images/example-1-lg_2x.jpg") 2x
+  );
+  // medium images (md)
+    @media(max-width: 900px) {
+      background-image: url("../dist/images/example-1-md_1x.jpg");
+      background-image: -webkit-image-set(
+        url("../dist/images/example-1-md_1x.webp") 1x,
+        url("../dist/images/example-1-md_2x.webp") 2x
+      );
+      background-image: image-set(
+        url("../dist/images/example-1-md_1x.jpg") 1x,
+        url("../dist/images/example-1-md_2x.jpg") 2x
+      );
+  }
+  // small images (sm)
+    @media (max-width: 600px) {
+      background-image: url("../dist/images/example-1-sm_1x.jpg");
+      background-image: -webkit-image-set(
+        url("../dist/images/example-1-sm_1x.webp") 1x,
+        url("../dist/images/example-1-sm_2x.webp") 2x
+      );
+      background-image: image-set(
+        url("../dist/images/example-1-sm_1x.jpg") 1x,
+        url("../dist/images/example-1-sm_2x.jpg") 2x
+      );
+    }
+}`
