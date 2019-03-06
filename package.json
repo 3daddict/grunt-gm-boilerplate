@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Michael Salvati",
+  "author": "[Michael Salvati](https://github.com/3daddict/)",
   "license": "MIT",
   "devDependencies": {
     "grunt": "^1.0.3",
