@@ -13,25 +13,34 @@ module.exports = function(grunt) {
               { name: "lg", suffix: "_2x", quality: 60, width: 2880 }
             ]
           },
-          cwebp: {
-            dynamic: {
-              options: {
-                q: 60
-              },
-              files: [
-                {
-                  expand: true,
-                  cwd: "dist/",
-                  src: ["**/*.{jpg,png}"],
-                  dest: "dest/"
-                }
-              ]
+          files: [
+            {
+              expand: true,
+              src: ["**/*.{jpg,png}"],
+              cwd: "src/",
+              dest: "dest/"
             }
-          }
+          ]
         }
-    }
-});
-    grunt.loadNpmTasks("grunt-responsive-images");
+      },
+      cwebp: {
+        dynamic: {
+          options: {
+            q: 60
+          },
+          files: [
+            {
+              expand: true,
+              cwd: "dest/",
+              src: ["**/*.{jpg,png}"],
+              dest: "dest/"
+            }
+          ]
+        }
+      }
+    });
+  grunt.loadNpmTasks("grunt-responsive-images");
     grunt.loadNpmTasks("grunt-cwebp");
-    grunt.registerTask("default", ["webp", "cwebp"]);
-};
+  grunt.registerTask("default", ["responsive_images", "cwebp"]);
+  };
+
