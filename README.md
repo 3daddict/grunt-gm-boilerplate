@@ -68,7 +68,8 @@ To ensure proper cross-browser compatibily original source files should also be 
         src="../dist/images/example-1-lg_1x.jpg"
         type="image/jpeg"
         alt="image description">
-</picture>```
+</picture>
+```
 
 #### SCSS
 ```.bg-image {
@@ -110,4 +111,5 @@ To ensure proper cross-browser compatibily original source files should also be 
         url("../dist/images/example-1-sm_2x.jpg") 2x
       );
     }
-}```
+}
+```
