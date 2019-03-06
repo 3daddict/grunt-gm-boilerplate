@@ -9,6 +9,9 @@ HTML and CSS Examples on how to setup <picture> images, breakpoints and fallback
 - GraphicsMagick `brew install graphicsmagick`
 - Grunt CLI `npm install -g grunt-cli`
 
+## Run
+To run the operations type `grunt` in the cli.
+
 ## Image Breakpoints
 #### Small - sm
 - 1x | quality: 60% | width: 600px

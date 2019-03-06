@@ -15,37 +15,37 @@ body {
   background-size: cover;
   background-position: center;
   // large images (lg)
-  background-image: url("https://via.placeholder.com/1920x1080.jpg"); 
+  background-image: url("../dist/images/example-1-lg_1x.jpg"); 
   background-image: -webkit-image-set(
-    url("https://via.placeholder.com/1920x1080.webp") 1x,
-    url("https://via.placeholder.com/1920x1080.webp") 2x
+    url("../dist/images/example-1-lg_1x.webp") 1x,
+    url("../dist/images/example-1-lg_2x.webp") 2x
   );
   background-image: image-set(
-    url("https://via.placeholder.com/1920x1080.jpg") 1x,
-    url("https://via.placeholder.com/1920x1080.jpg") 2x
+    url("../dist/images/example-1-lg_1x.jpg") 1x,
+    url("../dist/images/example-1-lg_2x.jpg") 2x
   );
   // medium images (md)
     @media(max-width: 900px) {
-      background-image: url("https://via.placeholder.com/1024x720.jpg");
+      background-image: url("../dist/images/example-1-md_1x.jpg");
       background-image: -webkit-image-set(
-        url("https://via.placeholder.com/1024x720.webp") 1x,
-        url("https://via.placeholder.com/1024x720.webp") 2x
+        url("../dist/images/example-1-md_1x.webp") 1x,
+        url("../dist/images/example-1-md_2x.webp") 2x
       );
       background-image: image-set(
-        url("https://via.placeholder.com/1024x720.jpg") 1x,
-        url("https://via.placeholder.com/1024x720.jpg") 2x
+        url("../dist/images/example-1-md_1x.jpg") 1x,
+        url("../dist/images/example-1-md_2x.jpg") 2x
       );
   }
   // small images (sm)
     @media (max-width: 600px) {
-      background-image: url("https://via.placeholder.com/640x480.webp");
+      background-image: url("../dist/images/example-1-sm_1x.jpg");
       background-image: -webkit-image-set(
-        url("https://via.placeholder.com/640x480.webp") 1x,
-        url("https://via.placeholder.com/640x480.webp") 2x
+        url("../dist/images/example-1-sm_1x.webp") 1x,
+        url("../dist/images/example-1-sm_2x.webp") 2x
       );
       background-image: image-set(
-        url("https://via.placeholder.com/640x480.jpg") 1x,
-        url("https://via.placeholder.com/640x480.jpg") 2x
+        url("../dist/images/example-1-sm_1x.jpg") 1x,
+        url("../dist/images/example-1-sm_2x.jpg") 2x
       );
     }
 }
