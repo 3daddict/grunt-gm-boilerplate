@@ -8,9 +8,10 @@ HTML and CSS Examples on how to setup <picture> images, breakpoints and fallback
 ## Install Dependancies
 - GraphicsMagick `brew install graphicsmagick`
 - Grunt CLI `npm install -g grunt-cli`
+- Run NPM `npm install` or Yarn `yarn install`
 
 ## Run
-To run the operations type `grunt` in the cli.
+To run the Grunt Task Runner operations type `grunt` in the cli.
 
 ## Image Breakpoints
 #### Small - sm
@@ -115,3 +116,4 @@ To ensure proper cross-browser compatibily original source files should also be 
     }
 }
 ```
+###### Credit to [Maciej Nowakowski](https://medium.freecodecamp.org/a-guide-to-responsive-images-with-ready-to-use-templates-c400bd65c433) for his article that helped make this boilerplate.
