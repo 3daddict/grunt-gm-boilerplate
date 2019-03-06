@@ -49,7 +49,8 @@ To ensure proper cross-browser compatibily original source files should also be 
 
 ### Code Examples
 #### HTML
-```<picture class="responsive-image">
+```
+<picture class="responsive-image">
     <source
         media="(min-width: 900px)"
         srcset="../dist/images/example-1-lg_1x.webp 1x, ../dist/images/example-1-lg_2x.webp 2x"
@@ -68,10 +69,12 @@ To ensure proper cross-browser compatibily original source files should also be 
         src="../dist/images/example-1-lg_1x.jpg"
         type="image/jpeg"
         alt="image description">
-</picture>```
+</picture>
+```
 
 #### SCSS
-```.bg-image {
+```
+.bg-image {
   width: 100vw;
   height: 500px;
   background-size: cover;
@@ -110,4 +113,5 @@ To ensure proper cross-browser compatibily original source files should also be 
         url("../dist/images/example-1-sm_2x.jpg") 2x
       );
     }
-}```
+}
+```
