@@ -125,3 +125,6 @@ To ensure proper cross-browser compatibily original source files should also be 
 }
 ```
 ###### Credit to [Maciej Nowakowski](https://medium.freecodecamp.org/a-guide-to-responsive-images-with-ready-to-use-templates-c400bd65c433) for his article that helped make this boilerplate.
+
+### License
+MIT
