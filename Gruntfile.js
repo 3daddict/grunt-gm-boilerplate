@@ -1,6 +1,6 @@
 module.exports = function(grunt) {
     grunt.initConfig({
-      grunt_gm_boilerplate: {
+      responsive_images: {
         dev: {
           options: {
             //Engine set to use GraphicsMagicks use "im" for ImageMagic
